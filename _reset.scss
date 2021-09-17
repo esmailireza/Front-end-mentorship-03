@@ -1,0 +1,28 @@
+/* font Roboto and Rosario */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rosario&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Noto Sans JP", sans-serif;
+  scroll-behavior: smooth;
+}
+
+li {
+  font-size: 2rem;
+}
+
+:root {
+  --mainBlackColor: #000;
+  --mainWhiteColor: #fff;
+  --mainGreenColor: #20bf6b;
+  --mainLightGreenColor: #26de81;
+  --mainGreyColor: #7f8c8d;
+}

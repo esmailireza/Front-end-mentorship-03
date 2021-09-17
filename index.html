@@ -4,8 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="." />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Front-end-mentorship-03</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-center">
+          <h1>Travel With Us</h1>
+          <span>
+            <span class="icon-title">Account</span>
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </nav>
+      <section>
+        <ul class="form-group">
+          <div class="section-of-from-group">
+            <li>Where you go?</li>
+            <select name="" id="select-region">
+              <option value="turkey">Select a region</option>
+              <option value="turkey">Turkey</option>
+              <option value="turkey">American</option>
+            </select>
+          </div>
+          <hr />
+          <div class="section-of-from-group">
+            <li>check in</li>
+            <input
+              type="date"
+              class="date"
+              value="addDate"
+              placeholder="200-43-322"
+            />
+
+            <!-- <input
+              type="text"
+              placeholder="fwfw"
+              class="date"
+              onload="(this.type='text')"
+              onfocus="(this.type='date')"
+            /> -->
+          </div>
+          <hr />
+          <div class="section-of-from-group">
+            <li>check out</li>
+            <input
+              type="date"
+              value="addDate"
+              placeholder="200-43-322"
+              class="date"
+            />
+          </div>
+
+          <li>
+            <input type="submit" value="Search" id="form-btn" />
+          </li>
+        </ul>
+      </section>
+    </header>
+  </body>
 </html>

@@ -1,0 +1,100 @@
+@import "./reset";
+
+@mixin font-color-size {
+  font-size: 2.5rem;
+  color: var(--mainGreenColor);
+}
+
+header {
+  background-image: url(./image/frontend-mentorship03.jpeg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .navbar {
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .navbar-center {
+      max-width: 1400px;
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        @include font-color-size();
+      }
+      i {
+        @include font-color-size();
+      }
+      .icon-title {
+        font-size: 1.8rem;
+        margin-right: 0.5rem;
+        color: var(--mainGreenColor);
+      }
+    }
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    .form-group {
+      display: flex;
+      background-color: var(--mainWhiteColor);
+      padding: 3rem 4rem;
+      border-radius: 1.5rem;
+      width: 60%;
+      justify-content: space-around;
+      #form-btn {
+        background-color: var(--mainGreenColor);
+        color: var(--mainWhiteColor);
+        padding: 1.5rem 4rem;
+        border: none;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        &:hover {
+          background-color: var(--mainLightGreenColor);
+          cursor: pointer;
+        }
+      }
+      #select-region {
+        border: none;
+        outline: none;
+        color: var(--mainGreyColor);
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+      .date {
+        width: 100%;
+        position: relative;
+        text-transform: lowercase;
+        border: none;
+        color: var(--mainGreyColor);
+        font-size: 1.8rem;
+        outline: none;
+        &::-webkit-calendar-picker-indicator {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: transparent;
+          bottom: 0;
+          left: 0;
+          text-transform: lowercase;
+          right: 0;
+          top: 0;
+          cursor: pointer;
+        }
+      }
+      .section-of-from-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+}
