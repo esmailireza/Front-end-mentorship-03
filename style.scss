@@ -1,7 +1,7 @@
 @import "./reset";
 
 @mixin font-color-size {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: var(--mainGreenColor);
 }
 
@@ -12,14 +12,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   .navbar {
-    height: 6rem;
+    height: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     .navbar-center {
       max-width: 1400px;
-      width: 100%;
+      width: 90%;
       padding: 2rem;
       display: flex;
       align-items: center;
@@ -27,8 +27,17 @@ header {
       h1 {
         @include font-color-size();
       }
+      .account-user {
+        background-color: var(--mainWhiteColor);
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       i {
         @include font-color-size();
+        color: var(--mainBrownColor);
       }
       .icon-title {
         font-size: 1.8rem;
