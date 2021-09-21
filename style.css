@@ -17,13 +17,13 @@ html {
 
 li {
   font-size: 2rem;
+  text-align: center;
 }
 
 :root {
   --mainBlackColor: #000;
   --mainWhiteColor: #fff;
-  --mainGreenColor: #20bf6b;
-  --mainLightGreenColor: #26de81;
+  --mainGreenColor: #4da185;
   --mainGreyColor: #7f8c8d;
   --mainBrownColor: #b75d5d;
 }
@@ -69,8 +69,14 @@ header .navbar .navbar-center {
 }
 
 header .navbar .navbar-center h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: var(--mainGreenColor);
+}
+
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center h1 {
+    font-size: 2rem;
+  }
 }
 
 header .navbar .navbar-center .account-user {
@@ -88,16 +94,35 @@ header .navbar .navbar-center .account-user {
           align-items: center;
 }
 
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center .account-user {
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+  }
+}
+
 header .navbar .navbar-center i {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: var(--mainGreenColor);
   color: var(--mainBrownColor);
+}
+
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center i {
+    font-size: 1.8rem;
+  }
 }
 
 header .navbar .navbar-center .icon-title {
   font-size: 1.8rem;
   margin-right: 0.5rem;
   color: var(--mainGreenColor);
+}
+
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center .icon-title {
+    font-size: 1.5rem;
+  }
 }
 
 header section {
@@ -114,37 +139,103 @@ header section {
   height: 80vh;
 }
 
+@media only screen and (width: 768px) {
+  header section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  header section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 18rem;
+  }
+}
+
 header section .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: var(--mainWhiteColor);
+  opacity: 0.9;
   padding: 3rem 4rem;
-  border-radius: 1.5rem;
+  border-radius: 1.8rem;
   width: 60%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
+@media only screen and (width: 375px) {
+  header section .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (width: 768px) {
+  header section .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  header section .form-group {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 header section .form-group #form-btn {
-  background-color: var(--mainGreenColor);
+  display: block;
   color: var(--mainWhiteColor);
-  padding: 1.5rem 4rem;
-  border: none;
-  border-radius: 1.5rem;
-  font-size: 2rem;
+  background-color: var(--mainGreenColor);
+  border: solid 2px transparent;
+  font-size: 2.3rem;
+  padding: 1rem 5rem;
+  border-radius: 17px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 header section .form-group #form-btn:hover {
-  background-color: var(--mainLightGreenColor);
-  cursor: pointer;
-}
-
-header section .form-group #select-region {
-  border: none;
-  outline: none;
-  color: var(--mainGreyColor);
-  font-size: 1.8rem;
+  color: var(--mainGreenColor);
+  background-color: #ffffff;
+  border: solid 2px var(--mainGreenColor);
   cursor: pointer;
 }
 
@@ -156,6 +247,7 @@ header section .form-group .date {
   color: var(--mainGreyColor);
   font-size: 1.8rem;
   outline: none;
+  text-align: center;
 }
 
 header section .form-group .date::-webkit-calendar-picker-indicator {
@@ -182,5 +274,27 @@ header section .form-group .section-of-from-group {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 2rem;
+}
+
+@media only screen and (width: 375px) {
+  header section .form-group .section-of-from-group {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (width: 768px) {
+  header section .form-group .section-of-from-group {
+    margin-bottom: 2.5rem;
+  }
+}
+
+header section .form-group .section-of-from-group #input-region {
+  border: none;
+  outline: none;
+  color: var(--mainGreyColor);
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
