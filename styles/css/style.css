@@ -1,0 +1,318 @@
+/* font Roboto and Rosario */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rosario&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Noto Sans JP", sans-serif;
+  scroll-behavior: smooth;
+}
+
+li {
+  font-size: 2rem;
+  text-align: center;
+}
+
+:root {
+  --mainBlackColor: #000;
+  --mainWhiteColor: #fff;
+  --mainGreenColor: #4da185;
+  --mainGreyColor: #7f8c8d;
+  --mainBrownColor: #b75d5d;
+}
+
+header {
+  background-image: url(./image/frontend-mentorship03.jpeg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  header {
+    background-image: url(./image/frontend-mentorship03-mobile-size.jpg);
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    background-image: url(./image/frontend-mentorship03-tablet-size.jpg);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  header {
+    background-image: url(./image/frontend-mentorship03-laptop-size.jpg);
+  }
+}
+
+header .navbar {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .navbar .navbar-center {
+  max-width: 1400px;
+  width: 90%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navbar .navbar-center h1 {
+  font-size: 3rem;
+  color: var(--mainGreenColor);
+}
+
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center h1 {
+    font-size: 2rem;
+  }
+}
+
+header .navbar .navbar-center .account-user {
+  background-color: var(--mainWhiteColor);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center .account-user {
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+  }
+}
+
+header .navbar .navbar-center i {
+  font-size: 3rem;
+  color: var(--mainGreenColor);
+  color: var(--mainBrownColor);
+}
+
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center i {
+    font-size: 1.8rem;
+  }
+}
+
+header .navbar .navbar-center .icon-title {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+  color: var(--mainGreenColor);
+}
+
+@media only screen and (width: 375px) {
+  header .navbar .navbar-center .icon-title {
+    font-size: 1.5rem;
+  }
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+@media only screen and (width: 768px) {
+  header section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  header section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 18rem;
+  }
+}
+
+header section .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--mainWhiteColor);
+  opacity: 0.9;
+  padding: 3rem 4rem;
+  border-radius: 1.8rem;
+  width: 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (width: 375px) {
+  header section .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (width: 768px) {
+  header section .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  header section .form-group {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+header section .form-group #form-btn {
+  display: block;
+  color: var(--mainWhiteColor);
+  background-color: var(--mainGreenColor);
+  border: solid 2px transparent;
+  font-size: 2.3rem;
+  padding: 1rem 5rem;
+  border-radius: 17px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header section .form-group #form-btn:hover {
+  color: var(--mainGreenColor);
+  background-color: #ffffff;
+  border: solid 2px var(--mainGreenColor);
+  cursor: pointer;
+}
+
+header section .form-group .date {
+  width: 100%;
+  position: relative;
+  text-transform: lowercase;
+  border: none;
+  color: var(--mainGreyColor);
+  font-size: 1.8rem;
+  outline: none;
+  text-align: center;
+}
+
+header section .form-group .date::-webkit-calendar-picker-indicator {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  left: 0;
+  text-transform: lowercase;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+header section .form-group .section-of-from-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 2rem;
+}
+
+@media only screen and (width: 375px) {
+  header section .form-group .section-of-from-group {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (width: 768px) {
+  header section .form-group .section-of-from-group {
+    margin-bottom: 2.5rem;
+  }
+}
+
+header section .form-group .section-of-from-group #input-region {
+  border: none;
+  outline: none;
+  color: var(--mainGreyColor);
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

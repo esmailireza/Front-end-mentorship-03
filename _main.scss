@@ -9,6 +9,15 @@ header {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+    background-image: url(./image/frontend-mentorship03-mobile-size.jpg);
+  }
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    background-image: url(./image/frontend-mentorship03-tablet-size.jpg);
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1440px) {
+    background-image: url(./image/frontend-mentorship03-laptop-size.jpg);
+  }
   .navbar {
     height: 10rem;
     display: flex;
