@@ -20,14 +20,6 @@ li {
   text-align: center;
 }
 
-:root {
-  --mainBlackColor: #000;
-  --mainWhiteColor: #fff;
-  --mainGreenColor: #4da185;
-  --mainGreyColor: #7f8c8d;
-  --mainBrownColor: #b75d5d;
-}
-
 header {
   background-image: url(../../image/bg-desktop.jpg);
   height: 100vh;
@@ -88,7 +80,7 @@ header .navbar .navbar-center {
 
 header .navbar .navbar-center h1 {
   font-size: 3rem;
-  color: var(--mainGreenColor);
+  color: #4da185;
 }
 
 @media only screen and (width: 375px) {
@@ -98,7 +90,7 @@ header .navbar .navbar-center h1 {
 }
 
 header .navbar .navbar-center .account-user {
-  background-color: var(--mainWhiteColor);
+  background-color: #fff;
   padding: 1rem 2rem;
   border-radius: 2rem;
   display: -webkit-box;
@@ -121,8 +113,8 @@ header .navbar .navbar-center .account-user {
 
 header .navbar .navbar-center i {
   font-size: 3rem;
-  color: var(--mainGreenColor);
-  color: var(--mainBrownColor);
+  color: #4da185;
+  color: #b75d5d;
 }
 
 @media only screen and (width: 375px) {
@@ -134,7 +126,7 @@ header .navbar .navbar-center i {
 header .navbar .navbar-center .icon-title {
   font-size: 1.8rem;
   margin-right: 0.5rem;
-  color: var(--mainGreenColor);
+  color: #4da185;
 }
 
 @media only screen and (width: 375px) {
@@ -189,7 +181,7 @@ header section .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--mainWhiteColor);
+  background-color: #fff;
   opacity: 0.9;
   padding: 3rem 4rem;
   border-radius: 1.8rem;
@@ -240,8 +232,8 @@ header section .form-group {
 
 header section .form-group #form-btn {
   display: block;
-  color: var(--mainWhiteColor);
-  background-color: var(--mainGreenColor);
+  color: #fff;
+  background-color: #4da185;
   border: solid 2px transparent;
   font-size: 2.3rem;
   padding: 1rem 5rem;
@@ -251,9 +243,9 @@ header section .form-group #form-btn {
 }
 
 header section .form-group #form-btn:hover {
-  color: var(--mainGreenColor);
+  color: #4da185;
   background-color: #ffffff;
-  border: solid 2px var(--mainGreenColor);
+  border: solid 2px #4da185;
   cursor: pointer;
 }
 
@@ -262,7 +254,7 @@ header section .form-group .date {
   position: relative;
   text-transform: lowercase;
   border: none;
-  color: var(--mainGreyColor);
+  color: #7f8c8d;
   font-size: 1.8rem;
   outline: none;
   text-align: center;
@@ -310,7 +302,7 @@ header section .form-group .section-of-from-group {
 header section .form-group .section-of-from-group #input-region {
   border: none;
   outline: none;
-  color: var(--mainGreyColor);
+  color: #7f8c8d;
   font-size: 1.6rem;
   cursor: pointer;
   text-align: center;

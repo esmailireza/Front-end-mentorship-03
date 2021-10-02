@@ -1,6 +1,6 @@
 @mixin font-color-size {
   font-size: 3rem;
-  color: var(--mainGreenColor);
+  color: $mainGreenColor;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
         }
       }
       .account-user {
-        background-color: var(--mainWhiteColor);
+        background-color: $mainWhiteColor;
         padding: 1rem 2rem;
         border-radius: 2rem;
         display: flex;
@@ -51,7 +51,7 @@ header {
       }
       i {
         @include font-color-size();
-        color: var(--mainBrownColor);
+        color: $mainBrownColor;
         @media only screen and (width: 375px) {
           font-size: 1.8rem;
         }
@@ -59,7 +59,7 @@ header {
       .icon-title {
         font-size: 1.8rem;
         margin-right: 0.5rem;
-        color: var(--mainGreenColor);
+        color: $mainGreenColor;
         @media only screen and (width: 375px) {
           font-size: 1.5rem;
         }
@@ -86,7 +86,7 @@ header {
 
     .form-group {
       display: flex;
-      background-color: var(--mainWhiteColor);
+      background-color: $mainWhiteColor;
       opacity: 0.9;
       padding: 3rem 4rem;
       border-radius: 1.8rem;
@@ -112,8 +112,8 @@ header {
 
       #form-btn {
         display: block;
-        color: var(--mainWhiteColor);
-        background-color: var(--mainGreenColor);
+        color: $mainWhiteColor;
+        background-color: $mainGreenColor;
         border: solid 2px transparent;
         font-size: 2.3rem;
         padding: 1rem 5rem;
@@ -121,9 +121,9 @@ header {
         -webkit-transition: all 200ms ease-in-out;
         transition: all 200ms ease-in-out;
         &:hover {
-          color: var(--mainGreenColor);
+          color: $mainGreenColor;
           background-color: #ffffff;
-          border: solid 2px var(--mainGreenColor);
+          border: solid 2px $mainGreenColor;
           cursor: pointer;
         }
       }
@@ -133,7 +133,7 @@ header {
         position: relative;
         text-transform: lowercase;
         border: none;
-        color: var(--mainGreyColor);
+        color: $mainGreyColor;
         font-size: 1.8rem;
         outline: none;
         text-align: center;
@@ -164,7 +164,7 @@ header {
         #input-region {
           border: none;
           outline: none;
-          color: var(--mainGreyColor);
+          color: $mainGreyColor;
           font-size: 1.6rem;
           cursor: pointer;
           text-align: center;
