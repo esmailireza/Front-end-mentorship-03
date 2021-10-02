@@ -29,7 +29,7 @@ li {
 }
 
 header {
-  background-image: url(./image/frontend-mentorship03.jpeg);
+  background-image: url(../../image/bg-desktop.jpg);
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -38,19 +38,19 @@ header {
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   header {
-    background-image: url(./image/frontend-mentorship03-mobile-size.jpg);
+    background-image: url(../../image/bg-mobile-size.jpg);
   }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   header {
-    background-image: url(./image/frontend-mentorship03-tablet-size.jpg);
+    background-image: url(../../image/bg-tablet-size.jpg);
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
   header {
-    background-image: url(./image/frontend-mentorship03-laptop-size.jpg);
+    background-image: url(../../image/bg-laptop-size.jpg);
   }
 }
 
