@@ -83,7 +83,7 @@ header .navbar .navbar-center h1 {
   color: #4da185;
 }
 
-@media only screen and (width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   header .navbar .navbar-center h1 {
     font-size: 2rem;
   }
@@ -104,7 +104,7 @@ header .navbar .navbar-center .account-user {
           align-items: center;
 }
 
-@media only screen and (width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   header .navbar .navbar-center .account-user {
     padding: 0.8rem;
     border-radius: 1.5rem;
@@ -117,7 +117,7 @@ header .navbar .navbar-center i {
   color: #b75d5d;
 }
 
-@media only screen and (width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   header .navbar .navbar-center i {
     font-size: 1.8rem;
   }
@@ -129,7 +129,7 @@ header .navbar .navbar-center .icon-title {
   color: #4da185;
 }
 
-@media only screen and (width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   header .navbar .navbar-center .icon-title {
     font-size: 1.5rem;
   }
@@ -165,7 +165,7 @@ header section {
   }
 }
 
-@media only screen and (width: 1024px) {
+@media only screen and (min-width: 768px) and (width: 1024px) {
   header section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -190,7 +190,7 @@ header section .form-group {
       justify-content: space-around;
 }
 
-@media only screen and (width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   header section .form-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -221,9 +221,18 @@ header section .form-group {
   }
 }
 
-@media only screen and (width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   header section .form-group {
-    width: 75%;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  header section .form-group {
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -287,7 +296,7 @@ header section .form-group .section-of-from-group {
   margin-right: 2rem;
 }
 
-@media only screen and (width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   header section .form-group .section-of-from-group {
     margin-bottom: 2.5rem;
   }
